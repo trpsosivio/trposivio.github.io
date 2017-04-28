@@ -1,0 +1,10 @@
+//CSS Style sheet for gamesite.html
+body{
+    background-image: url("background.jpg");
+}
+h1{
+    color:royalblue;
+}
+nav{
+    color:royalblue;
+}
