@@ -20,20 +20,24 @@ figure {
 }
 
 body {
-	margin: 0; /* remove any margin from body */
-	padding: 0; /* ditto for padding */
+	margin: 0;
+	padding: 0;
 	background-color: salmon;
 	font-family: "Helvetica", sans-serif, "Arial";
 	font-size: 20px;
+	background-image: url(images/sunny-winter.jpg);
+	background-size:cover;
+
+
 }
 
 main {
 	display:flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	background-image: url(images/sunny-winter.jpg);
-	background-size:cover;
-	margin-bottom: 40px;
+	padding: 0px;
+	margin: 0px;
+
 
 }
 
@@ -41,7 +45,7 @@ nav ul{
 	display: flex;
 	line-height: 150%;
 	height: 40px;
-	/*background-color: salmon;*/
+	background-color: salmon;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -64,6 +68,8 @@ nav{
 
 #hourly {
 	display: none;
+	border: 1px solid;
+
 }
 
 h1,
@@ -193,4 +199,91 @@ img[alt="high/low"] {
 nav a{
 	display: block;
 	padding: 5px;
+}
+
+@media screen and (min-width: 480px) {
+	#hourly {
+		display: block;
+		width: 33%;
+		height: 100%;
+		border: 1 px solid;
+
+	}
+	.currentime{
+		display: block;
+	}
+	nav {
+		position:inherit;
+		margin-top: -20px;
+	}
+	main {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+
+	}
+
+	#current{
+		order: -1;
+		border-radius: 0px;
+		align-self: stretch;
+		width: 33%;
+		height: 100%;
+		padding: 0;
+		border: 1px solid;
+		margin: 0px;
+		background-color: salmon;
+
+
+	}
+
+	footer {
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+
+	#franklin{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		background-image: url(images/sunny-winter.jpg);
+		background-size:cover;
+		border: 1px solid;
+		align-self: stretch;
+		width: 33%;
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+	body{
+		background-image: url(#);
+	}
+	#franklinweather{
+		margin: 0px;
+		padding: 0 px;
+		height: 100px;
+		width: 200px;
+	}
+	.pamount{
+		margin: 0px;
+		margin-bottom: 40px;
+		margin-top: 0px;
+	}
+
+	section h3{
+		display: block;
+		color: white;
+	}
+
+	#hourlyimg{
+		margin-top:0px;
+	}
+
+	#hourly h2{
+		margin-top: 40px;
+	}
 }
