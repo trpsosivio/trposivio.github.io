@@ -1,8 +1,8 @@
-	@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
 	box-sizing: border-box;
 	/* changes width property
- to total width instead of content width */
+	to total width instead of content width */
 }
 
 article,
@@ -16,8 +16,8 @@ figcaption,
 figure {
 	display: block;
 	/* just in case we have
- any older browsers that don't recognize
- the HTML5 semantic elements */
+	any older browsers that don't recognize
+	the HTML5 semantic elements */
 }
 
 body {
@@ -106,7 +106,7 @@ nav a:active {
 	color: #A6D8DB;
 }
 
-#franklin,
+#greenville,
 #current,
 #hourly {
 	flex: 1 1 auto;
@@ -131,7 +131,7 @@ nav a:active {
 	display: inline-block;
 }
 
-#franklinweather {
+#greenvilleweather {
 	background-color: rgba(200, 200, 200, .6);
 	margin: .2em auto;
 	border: 1px solid;
@@ -151,7 +151,7 @@ nav a:active {
 	display: none;
 }
 
-img[alt="Franklin Image"] {
+img[alt="Greenville Image"] {
 	display: none;
 }
 
@@ -198,7 +198,7 @@ img[alt="high/low"] {
 	margin-left: 10px;
 }
 
-#franklin h2 {
+#greenville h2 {
 	color: white
 }
 
@@ -208,39 +208,39 @@ nav a {
 }
 
 @media screen and (min-width: 480px) {
-main {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	height:390px;
+	main {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		height:390px;
 
 	}
-#hourly {
-	display: block;
-	width: 33%;
-	order:2;
-	background-color: rgba(200, 200, 200, .6);
+	#hourly {
+		display: block;
+		width: 33%;
+		order:2;
+		background-color: rgba(200, 200, 200, .6);
 	}
-#franklin {
-	order:1;
-	width: 33%;
-	background-color: rgba(200, 200, 200, .6);
+	#greenville {
+		order:1;
+		width: 33%;
+		background-color: rgba(200, 200, 200, .6);
 	}
-#current p {
-	position: relative;
-	top: 40px;
+	#current p {
+		position: relative;
+		top: 40px;
 	}
-footer {
-	position: fixed;
-	bottom: 40px;
-	left: 0px;
-	right: 0px;
+	footer {
+		position: fixed;
+		bottom: 40px;
+		left: 0px;
+		right: 0px;
 	}
-#current{
-	height:auto;
-	width: 33%;
+	#current{
+		height:auto;
+		width: 33%;
 	}
-#franklinweather {
-	position: relative;
-	top: 40px;
+	#greenvilleweather {
+		position: relative;
+		top: 40px;
 	}
