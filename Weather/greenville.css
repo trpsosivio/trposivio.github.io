@@ -46,6 +46,8 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	justify-content: space-around;
+	font-size: 14px;
 }
 
 nav {
@@ -212,7 +214,9 @@ nav a {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
-		height:390px;
+		height:410px;
+		position: relative;
+		top: -20px;
 
 	}
 	#hourly {
@@ -243,4 +247,17 @@ nav a {
 	#greenvilleweather {
 		position: relative;
 		top: 40px;
+	}
+
+	nav{
+		position: relative;
+		top: -20px;
+	}
+
+	nav ul {
+		font-size: 20px;
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
 	}
