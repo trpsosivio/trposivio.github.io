@@ -1,264 +1,261 @@
-	@import url('https://fonts.googleapis.com/css?family=Sansita');
-* {
-	box-sizing: border-box;
-	/* changes width property
+		@import url('https://fonts.googleapis.com/css?family=Sansita');
+	* {
+		box-sizing: border-box;
+		/* changes width property
  to total width instead of content width */
-}
+	}
 
-article,
-aside,
-footer,
-header,
-nav,
-section,
-main,
-figcaption,
-figure {
-	display: block;
-	/* just in case we have
+	article,
+	aside,
+	footer,
+	header,
+	nav,
+	section,
+	main,
+	figcaption,
+	figure {
+		display: block;
+		/* just in case we have
  any older browsers that don't recognize
  the HTML5 semantic elements */
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	background-color: salmon;
-	font-family: "Helvetica", sans-serif, "Arial";
-	font-size: 20px;
-	background-image: url(images/sunny-winter.jpg);
-	background-size: cover;
-}
-
-main {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	padding: 0px;
-	margin: 0px;
-	height: 530px;
-}
-
-nav ul {
-	display: flex;
-	line-height: 150%;
-	height: 40px;
-	background-color: salmon;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	justify-content: space-around;
-	font-size: 14px;
-}
-
-nav {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.title h1+h1 {
-	text-align: right;
-	margin-top: -.7em;
-	font-size: 30px
-}
-
-#hourly {
-	display: none;
-	border: 1px solid;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Sansita, sans-serif, serif;
-}
-
-header {
-	background-color: #A6D8DB;
-	margin-top: -30px;
-}
-
-footer {
-	background-color: #A6D8DB;
-	height: 30px;
-	position: fixed;
-	bottom: 40px;
-	left: 0px;
-	right: 0px;
-}
-
-nav a:link {
-	color: #4A4653;
-	text-decoration: none;
-}
-
-nav a:visited {
-	color: #4A4653;
-}
-
-nav a:hover {
-	color: #E7EF61;
-}
-
-nav a:active {
-	color: #A6D8DB;
-}
-
-#franklin,
-#current,
-#hourly {
-	flex: 1 1 auto;
-	align-self: stretch;
-	border: 1px solid #000;
-	border-radius: 2px;
-	padding: .5em;
-}
-
-#current {
-	background-color: rgba(200, 200, 200, .6);
-	height:158px
-}
-
-#current p{
-	position: relative;
-	top: 40px;
-}
-
-.dice2 {
-	transform: rotate(25deg);
-	display: inline-block;
-}
-
-#franklinweather {
-	background-color: rgba(200, 200, 200, .6);
-	margin: .2em auto;
-	border: 1px solid;
-	text-align: center;
-}
-
-.hlp {
-	text-align: right;
-	margin-right: 10px;
-}
-
-.hlimg {
-	float: left;
-}
-
-.currentime {
-	display: none;
-}
-
-img[alt="Franklin Image"] {
-	display: none;
-}
-
-section h3 {
-	display: none;
-}
-
-.wind {
-	margin-top: -45px;
-	padding: 5px;
-}
-
-.speed {
-	text-align: right;
-	margin-top: -50px;
-	margin-right: 18px;
-}
-
-.direction {
-	text-align: right;
-	margin-top: -20px;
-}
-
-.percip {
-	text-align: left;
-}
-
-.pamount {
-	text-align: right;
-	margin-top: -44px;
-	margin-right: 68px
-}
-
-h2.current {
-	margin-top: -5px;
-	font-size: 22px;
-	margin-right: 50px;
-	padding: 5px;
-}
-
-img[alt="high/low"] {
-	width: 30px;
-	height: 30px;
-	margin-left: 10px;
-}
-
-#franklin h2 {
-	color: white
-}
-
-nav a {
-	display: block;
-	padding: 5px;
-}
-
-@media screen and (min-width: 480px) {
-main {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	height:552px;
-	position: relative;
-	top: -20px;
-
-	}
-#hourly {
-	display: block;
-	width: 33%;
-	order:2;
-	background-color: rgba(200, 200, 200, .6);
-	}
-#franklin {
-	order:1;
-	width: 33%;
-	background-color: rgba(200, 200, 200, .6);
-	}
-#current p {
-	position: relative;
-	top: 40px;
-	}
-footer {
-	position: fixed;
-	bottom: 40px;
-	left: 0px;
-	right: 0px;
-	}
-#current{
-	height:auto;
-	width: 33%;
-	}
-#franklinweather {
-	position: relative;
-	top: 40px;
 	}
 
-	nav{
-		position: relative;
-		top: -20px;
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: salmon;
+		font-family: "Helvetica", sans-serif, "Arial";
+		font-size: 20px;
+		background-image: url(images/sunny-winter.jpg);
+		background-size: cover;
 	}
 
-nav ul {
-	font-size: 20px;
+	main {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		padding: 0px;
+		margin: 0px;
+		height: 530px;
 	}
-footer {
+
+	nav ul {
+		display: flex;
+		line-height: 150%;
+		height: 40px;
+		background-color: salmon;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		justify-content: space-around;
+		font-size: 14px;
+	}
+
+	nav {
 		position: fixed;
 		bottom: 0;
+		left: 0;
+		right: 0;
 	}
+
+	.title h1+h1 {
+		text-align: right;
+		margin-top: -.7em;
+		font-size: 30px
+	}
+
+	#hourly {
+		display: none;
+		border: 1px solid;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Sansita, sans-serif, serif;
+	}
+
+	header {
+		background-color: #A6D8DB;
+		margin-top: -30px;
+	}
+
+	footer {
+		background-color: #A6D8DB;
+		height: 30px;
+		position: fixed;
+		bottom: 40px;
+		left: 0px;
+		right: 0px;
+	}
+
+	nav a:link {
+		color: #4A4653;
+		text-decoration: none;
+	}
+
+	nav a:visited {
+		color: #4A4653;
+	}
+
+	nav a:hover {
+		color: #E7EF61;
+	}
+
+	nav a:active {
+		color: #A6D8DB;
+	}
+
+	#franklin,
+	#current,
+	#hourly {
+		flex: 1 1 auto;
+		align-self: stretch;
+		border: 1px solid #000;
+		border-radius: 2px;
+		padding: .5em;
+	}
+
+	#current {
+		background-color: rgba(200, 200, 200, .6);
+		height: 158px
+	}
+
+	#current p {
+		position: relative;
+		top: 40px;
+	}
+
+	.dice2 {
+		transform: rotate(25deg);
+		display: inline-block;
+	}
+
+	#franklinweather {
+		background-color: rgba(200, 200, 200, .6);
+		margin: .2em auto;
+		border: 1px solid;
+		text-align: center;
+	}
+
+	.hlp {
+		text-align: right;
+		margin-right: 10px;
+	}
+
+	.hlimg {
+		float: left;
+	}
+
+	.currentime {
+		display: none;
+	}
+
+	img[alt="Franklin Image"] {
+		display: none;
+	}
+
+	section h3 {
+		display: none;
+	}
+
+	.wind {
+		margin-top: -45px;
+		padding: 5px;
+	}
+
+	.speed {
+		text-align: right;
+		margin-top: -50px;
+		margin-right: 18px;
+	}
+
+	.direction {
+		text-align: right;
+		margin-top: -20px;
+	}
+
+	.percip {
+		text-align: left;
+	}
+
+	.pamount {
+		text-align: right;
+		margin-top: -44px;
+		margin-right: 68px
+	}
+
+	h2.current {
+		margin-top: -5px;
+		font-size: 22px;
+		margin-right: 50px;
+		padding: 5px;
+	}
+
+	img[alt="high/low"] {
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+	}
+
+	#franklin h2 {
+		color: white
+	}
+
+	nav a {
+		display: block;
+		padding: 5px;
+	}
+
+	@media screen and (min-width: 480px) {
+		main {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			height: 552px;
+			position: relative;
+			top: -20px;
+		}
+		#hourly {
+			display: block;
+			width: 33%;
+			order: 2;
+			background-color: rgba(200, 200, 200, .6);
+		}
+		#franklin {
+			order: 1;
+			width: 33%;
+			background-color: rgba(200, 200, 200, .6);
+		}
+		#current p {
+			position: relative;
+			top: 40px;
+		}
+		footer {
+			position: fixed;
+			bottom: 40px;
+			left: 0px;
+			right: 0px;
+		}
+		#current {
+			height: auto;
+			width: 33%;
+		}
+		#franklinweather {
+			position: relative;
+			top: 40px;
+		}
+		nav {
+			position: relative;
+			top: -20px;
+		}
+		nav ul {
+			font-size: 20px;
+		}
+		footer {
+			position: fixed;
+			bottom: 0;
+		}
