@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Weather Center</title>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="search.css" media="screen">
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Activity?
+* 1. Taylor Posivio
+* 2. Ian Cunningham
+* 3. Chandler Tew
+* 4. Ryan Call
+* 5.
+* ******************************************** -->
+
+<body>
+	<form method="get" action="//autocomplete.wunderground.com/aq" id="searchform">
+		<input type="search" name="query" id="query">
+		<input type="submit" name="submit" value="Search" id="send">
+	</form>
+	<!--    Display the search results here  -->
+	<section id="searchResults">
+		<h2>Search results</h2>
+	</section>
+
+	<footer>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="search.js"></script>
+	</footer>
+</body>
+
+</html>
