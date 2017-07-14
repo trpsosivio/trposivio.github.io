@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;
+
+}
+
+#wrapper {
+	background-color: white;
+
+
+}
+
+body{
+	font-family:fantasy;
+	background-image:url(/acme/images/site/background.jpg
+	);
+	background-size: cover;
+}
+
+
+nav{
+	background-color: #de2226;
+	height: 50px;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+
+
+}
+nav ul {
+	display: flex;
+	justify-content:space-around;
+	list-style-type: none;
+
+
+}
+
+#page-nav a {
+	text-decoration: none;
+	color: black;
+}
+
+#filler{
+	height: 50px;
+	margin-top: -30px;
+}
+
+#filler h1 {
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+#content {
+	height:auto;
+
+}
+
+
+
+#tfooter {
+	text-align: center;
+	border-top: solid 5px;
+	border-top-color: black;
+
+}
+
+#tfooter div {
+	display: flex;
+	justify-content: center
+}
+
+#content {
+	background-color: white;
+
+}
+
+/*************************************************
+***********************HOMEPAGE*******************
+*************************************************/
+
+#hbody {
+	background-color: white;
+
+}
+
+#hheader{
+	font-size: 30px;
+}
+
+#rocketad {
+	background-image:url(/acme/images/site/feature.jpg);
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+
+#rocketad ul{
+	position: relative;
+	float: right;
+	list-style-type: none;
+	color: #990033;
+
+}
+#productbox{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-flow: wrap;
+	width: 100%
+
+}
+
+#hreviews{
+	display: flex;
+	flex-direction: column;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	width: 180px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 80%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 480px) {
+	hproducts{
+		float: left;
+		width: 50%;
+	}
+	#productbox{
+		display: flex;
+		float: left;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-flow: wrap;
+		width: auto;
+	}
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+
+	#hreviews{
+		float: right;
+		width: 50%;
+
+	}
+
+}
+
+
+
+
