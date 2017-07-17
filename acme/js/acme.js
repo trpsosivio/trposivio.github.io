@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	function getData() {
 		$.ajax({
 			url: "/acme/js/acme.json",
@@ -16,7 +17,7 @@ $(document).ready(function () {
 				$("#decoys").text(decoys);
 				$("#traps").text(traps);
 				console.log(explosives);
-				$("#homecontent").load("/acme/index.html");
+
 				$("#filler").hide();
 			}
 
@@ -29,6 +30,12 @@ $(document).ready(function () {
 		evt.preventDefault();
 		var nav = $(this).text();
 		console.log(nav);
+		if(nav == 'Home'){
+
+			$("#wrapper").load("/acme/index.html");
+
+		}
+		else{
 		$.ajax({
 			url: "/acme/js/acme.json",
 			dataType: "json",
@@ -39,17 +46,21 @@ $(document).ready(function () {
 				var manufacturer = data.Navigation[nav].manufacturer;
 				var reviews = data.Navigation[nav].reviews;
 				var price = data.Navigation[nav].price;
+				var path = data.Navigation[nav].path;
 
 				$("#name").text(name);
 				$("#description").text(description);
-				$("#manufacturer").text(manufacturer);
-				$("#reviews").text(reviews);
-				$("#price").text(price);
+				$("#manufacturer").html("<strong>Made by:</strong>" + ' ' + manufacturer);
+				$("#reviews").text(reviews +"/5 Stars");
+				$("#price").html("<strong>Price:</strong>" + " $" + price);
 				$("#name").text(name);
 				$("#homecontent").hide();
+				$("#path").html('<img src="' + path +'" alt="item picture" id="' + nav +'">');
 
-			}
+				}
+
 		});
+		}
 	});
 
 });

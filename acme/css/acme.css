@@ -63,23 +63,27 @@ nav ul {
 
 }
 
-#content {
-	height:auto;
+#homecontent {
+	height:1100px;
 
 }
 
 
 
 #tfooter {
-	text-align: center;
+
 	border-top: solid 5px;
 	border-top-color: black;
+
+
+
 
 }
 
 #tfooter div {
 	display: flex;
-	justify-content: center
+	justify-content: center;
+
 }
 
 #content {
@@ -116,11 +120,16 @@ nav ul {
 }
 #productbox{
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	flex-flow: wrap;
-	width: 100%
+	flex-direction: row;
+	width: 100%;
 
+
+
+}
+#productbox1{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 #hreviews{
@@ -148,7 +157,32 @@ div.desc {
 	text-align: center;
 }
 
+#productflex{
+	 display: flex;
+	flex-direction: column;
+}
 
+/*************************************************
+***********************Content********************
+*************************************************/
+
+#name{
+	font-weight: bold;
+}
+
+#price{
+	color: #de2226;
+}
+
+
+#picture{
+	width:100%
+}
+
+
+/*************************************************
+***********************Large Screen***************
+*************************************************/
 @media screen and (min-width: 480px) {
 	hproducts{
 		float: left;
@@ -159,8 +193,17 @@ div.desc {
 		float: left;
 		flex-direction: row;
 		justify-content: flex-start;
-		flex-flow: wrap;
-		width: auto;
+		flex-flow: nowrap;
+		width: 50%;
+	}
+
+	#productbox1{
+		display: flex;
+		float: left;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-flow: nowrap;
+		width: 50%;
 	}
 	div.gallery img {
 		width: 100%;
@@ -171,8 +214,51 @@ div.desc {
 	#hreviews{
 		float: right;
 		width: 50%;
-
+		position: relative;
+		bottom: 500px;
 	}
+	body{
+		font-size: 20px;
+	}
+	#page-nav{
+		font-size:30px;
+		height: 80px;
+	}
+	#welcome{
+		font-size: 40px;
+	}
+
+	#homecontent{
+		height: 300px;
+	}
+
+	#name{
+		font-size: 40px;
+	}
+
+	#path{
+		float: left;
+		width: 50%;
+	}
+
+	#information{
+		font-size: 30px;
+		float: right;
+		display: flex;
+		align-content: flex-start;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 50%;
+	}
+
+	#content{
+		height: 800px;
+	}
+	#picture{
+		width: 80%;
+		height: 50%;
+	}
+
 
 }
 
