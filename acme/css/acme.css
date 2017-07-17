@@ -64,7 +64,7 @@ nav ul {
 }
 
 #homecontent {
-	height:1100px;
+	height:800px;
 
 }
 
@@ -104,11 +104,16 @@ nav ul {
 	font-size: 30px;
 }
 
-#rocketad {
-	background-image:url(/acme/images/site/feature.jpg);
-	background-size: cover;
+#rocketimg{
+	width: 100%;
+}
+
+#ad{
 	position: relative;
-	height: 400px;
+	bottom: 180px;
+	width: 50%;
+	float: right;
+
 }
 
 #rocketad ul{
@@ -116,6 +121,7 @@ nav ul {
 	float: right;
 	list-style-type: none;
 	color: #990033;
+	font-size: 12px;
 
 }
 #productbox{
@@ -162,6 +168,10 @@ div.desc {
 	flex-direction: column;
 }
 
+#actionbtn{
+	width: 70%;
+}
+
 /*************************************************
 ***********************Content********************
 *************************************************/
@@ -175,8 +185,22 @@ div.desc {
 }
 
 
-#picture{
-	width:100%
+#Traps{
+	width:100%;
+	height: 100%;
+}
+#Anvils{
+	width: 100%;
+	height:100%;
+}
+
+#Explosives{
+	width: 100px;
+	height: 200px;
+}
+#Decoys{
+	width: 100px;
+	height: 200px;
 }
 
 
@@ -229,7 +253,7 @@ div.desc {
 	}
 
 	#homecontent{
-		height: 300px;
+		height: 600px;
 	}
 
 	#name{
@@ -257,6 +281,25 @@ div.desc {
 	#picture{
 		width: 80%;
 		height: 50%;
+	}
+	#ad{
+		position: relative;
+		bottom: 500px;
+
+	}
+	#rocketad ul{
+	font-size: 30px;
+	}
+	#actionbtn{
+		width:100%
+	}
+	#Explosives{
+		width: 300px;
+		height: 400px;
+	}
+	#Decoys{
+		width: 400px;
+		height: 500px;
 	}
 
 
